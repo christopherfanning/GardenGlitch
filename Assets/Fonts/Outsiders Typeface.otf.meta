@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: a07848dff4d8fcea9b12a62ddd95b386
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Outsiders
+  fontNames:
+  - Outsiders
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 70f3e51b699792363adfbc0e615ac825, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
