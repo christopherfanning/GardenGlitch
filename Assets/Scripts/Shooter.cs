@@ -9,24 +9,25 @@ public class Shooter : MonoBehaviour
     // s GameObject gun = Transform child;
     AttackerSpawner[] spawners;
     AttackerSpawner myLaneSpawner;
-
+    Animator animator;
 
     void Start()
     {
         SetLaneSpawner();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
         if (IsAttackerInLane())
         {
-            Debug.Log("Fire away!");
-            // TODO Change animation state to shooting
+            // Debug.Log("Fire away!");
+            animator.SetBool("isAttacking", true);
         }
         else
         {
-            Debug.Log("Sit and wait");
-            // TODO change animation state to Idle. 
+            // Debug.Log("Sit and wait");
+            animator.SetBool("isAttacking", false);
         }
     }
 
