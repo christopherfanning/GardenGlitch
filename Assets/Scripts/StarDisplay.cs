@@ -40,7 +40,7 @@ public class StarDisplay : MonoBehaviour
         }
         else {return;}
 
-        
+       // TODO send video to ray about game mechanics GDC? maybe or something. 
 
     }
 }
