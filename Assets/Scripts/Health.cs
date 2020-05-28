@@ -8,12 +8,12 @@ public class Health : MonoBehaviour
     [SerializeField] GameObject deathVFX;
 
 
-    public void TakeDamage(float damage)
+    public void DealDamage(float damage)
     {
         health -= damage;
     }
 
-    private void Update() 
+    private void Update()
     {
         if (health <= 0)
         {
@@ -24,12 +24,12 @@ public class Health : MonoBehaviour
     private void KillGameObject()
     {
         Destroy(gameObject);
-        
-        if(!deathVFX){return;}
+
+        if (!deathVFX) { return; }
         else
         {
             Instantiate(deathVFX, transform.position, transform.rotation);
-        
+
         }
     }
 }
