@@ -39,4 +39,9 @@ public class Attacker : MonoBehaviour
             health.DealDamage(damage);
         }
     }
+
+    public GameObject GetCurrentTarget()
+    {
+        return currentTarget;
+    }
 }
