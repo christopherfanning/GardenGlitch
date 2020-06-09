@@ -142,7 +142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &176152102
 Transform:
   m_ObjectHideFlags: 0
@@ -1639,16 +1639,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 176152102}
     m_Modifications:
-    - target: {fileID: -2634086055441344144, guid: 48c932e5958004639a29e317c7f5aa16,
-        type: 3}
-      propertyPath: minSpawnDelay
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: -2634086055441344144, guid: 48c932e5958004639a29e317c7f5aa16,
-        type: 3}
-      propertyPath: maxSpawnDelay
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 3577742163875147352, guid: 48c932e5958004639a29e317c7f5aa16,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -45,10 +45,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawning: 1
-  attackerPrefab: {fileID: 6764124647917571242, guid: 40c7aaa720221a5f38d654136d9ab259,
-    type: 3}
-  minSpawnDelay: 1
-  maxSpawnDelay: 5
+  attackerPrefab:
+  - {fileID: 585477403334055998, guid: f5b2441800d7db4c68e193caac238a2a, type: 3}
+  - {fileID: 6764124647917571242, guid: 40c7aaa720221a5f38d654136d9ab259, type: 3}
+  minSpawnDelay: 7
+  maxSpawnDelay: 7
 --- !u!95 &3577742163659371010
 Animator:
   serializedVersion: 3

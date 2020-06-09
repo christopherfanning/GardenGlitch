@@ -5,7 +5,7 @@ using UnityEngine;
 public class AttackerSpawner : MonoBehaviour
 {
     [SerializeField] bool spawning = true;
-    [SerializeField] Attacker attackerPrefab;
+    [SerializeField] Attacker[] attackerPrefab;
     float timeBetweenSpawns;
     [SerializeField] float minSpawnDelay = 1f;
     [SerializeField] float maxSpawnDelay = 5f;
@@ -23,16 +23,23 @@ public class AttackerSpawner : MonoBehaviour
 
     private void SpawnAttacker()
     {
+        // random range from zero to length of Attacker array
+        var index = Random.Range(0, attackerPrefab.Length);
+        Spawn(index);
+    }
+
+    private void Spawn(int index)
+    {
         Attacker newAttacker = Instantiate
-         (attackerPrefab, transform.position, transform.rotation)
-          as Attacker;
-        
+                 (attackerPrefab[index], transform.position, transform.rotation)
+                  as Attacker;
+
         newAttacker.transform.parent = transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
